@@ -1,0 +1,103 @@
+h1.name {
+	text-decoration: underline;
+}
+
+h1.certificates-txt {
+	font-size: 30px;
+	top: 10px;
+	font-weight: 700;
+}
+
+.background-image-left {
+	position: absolute;
+	top: 20%;
+	width: 40%;
+	z-index: -4;
+}
+
+.certificates-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	min-height: 60vh;
+	top: 70px;
+}
+
+@media screen and (max-width: 580px) {
+	.certificates-container {
+		margin-bottom: 90px;
+	}
+}
+
+.certificates-container .certificates {
+	position: relative;
+	display: flex;
+	justify-content: start;
+	align-items: flex-start;
+	max-width: 100%;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	background-color: rgba(0, 0, 0, 0.014);
+	padding: 20px;
+	border-radius: 50px;
+}
+
+.certificates-container .certificates-1 .certificates-img {
+	height: 300px;
+	width: 300px;
+	border-radius: 40px;
+	background: url(../../assets/img/uts.png);
+	background-size: cover;
+	background-color: #fff;
+	background-position: center;
+	border: 2px solid var(--color-sec-light);
+}
+
+.certificates-container .certificates .certificates-info {
+	margin-left: 50px;
+	font-family: "Open Sans Condensed";
+	max-width: 150%;
+}
+
+.certificates-container .certificates .certificates-info .name {
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.certificates-container .certificates .certificates-info .position {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.certificates-container .certificates .certificates-info .contact-certificates {
+	background: var(--color-sec-light);
+	padding: 17px 35px;
+	font-size: 18px;
+	border-radius: 50px;
+	position: absolute;
+	transform: 0.1s ease;
+}
+
+.certificates-container
+	.certificates
+	.certificates-info
+	.contact-certificates
+	span {
+	text-transform: capitalize;
+}
+
+.certificates-container
+	.certificates
+	.certificates-info
+	.contact-certificates:hover {
+	background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+	color: #b8b8b8;
+}
+
+.about li {
+	text-align: justify;
+}

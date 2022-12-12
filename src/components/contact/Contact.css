@@ -1,0 +1,128 @@
+.contact-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+	min-height: 55vh;
+	margin-top: 10px;
+	padding: 30px;
+}
+
+.contact-container h1 {
+	margin: 0 auto;
+	font-size: 45px;
+	font-family: "Open Sans Condensed";
+	font-weight: 700;
+}
+
+.contact-container .contact-links {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.contact-container .contact {
+	position: inherit;
+	height: 280px;
+	width: 30%;
+	background: rgba(0, 0, 0, 0.322);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-container .contact:hover {
+	background: rgba(255, 255, 255, 0.096);
+	transform: scale(1.1);
+}
+
+.contact-container .contact:hover h2 span {
+	color: #0d6efd;
+	font-weight: 400;
+}
+
+.contact-container .contact .icon {
+	position: relative;
+	font-size: 130px;
+}
+
+.contact-container .contact h2 {
+	position: relative;
+	margin-top: 15px;
+	font-size: 21px;
+	font-weight: 500;
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	text-transform: capitalize;
+	font-family: "Open Sans";
+	text-align: center;
+}
+
+h2 span {
+	font-size: 13px;
+	font-weight: 100;
+	text-transform: lowercase;
+	margin-top: 3px;
+	color: rgb(202, 202, 202);
+}
+
+.whatsapp,
+.email,
+.instagram {
+	color: #fff;
+	text-decoration: none;
+}
+
+.box ul li {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	list-style: none;
+	opacity: 0;
+	background: radial-gradient(deepskyblue, transparent, transparent);
+	bottom: 0;
+	left: 10vw;
+	z-index: 1;
+	animation: animate 15s linear infinite;
+}
+
+.box ul li:nth-child(2) {
+	left: 37vw;
+	animation-delay: 2s;
+}
+
+.box ul li:nth-child(3) {
+	left: 25vw;
+	animation-delay: 4s;
+}
+
+.box ul li:nth-child(4) {
+	left: 60vw;
+	animation-delay: 6s;
+}
+
+.box ul li:nth-child(5) {
+	left: 75vw;
+	animation-delay: 4s;
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+		bottom: 0;
+	}
+	100% {
+		transform: scale(10);
+		opacity: 0;
+		bottom: 100vh;
+	}
+}
